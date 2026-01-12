@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Love 💕</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <audio id="bgMusic" loop>
+    <source src="love-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="tap-overlay" onclick="startMusic()">
+    <p>Tap to see my surprise for you 💖</p>
+  </div>
+
+  <div class="card">
+    <h1>For You, <span class="name">my babyy</span> 💖</h1>
+    
+    <div class="slider-container">
+        <p class="subtitle">my cute darling</p>
+        <img id="slider" class="photo" src="images/gf1.jpg" alt="definition of adorable">
+        <div class="img-buttons">
+          <button onclick="prevImage()">⬅</button>
+          <button onclick="nextImage()">➡</button>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="video-container">
+        <p class="subtitle">A special video for you 🎥</p>
+        <video id="myVideo" controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <button class="love-btn" onclick="openLetter()">💌 Open My Letter</button>
+  </div>
+
+  <div id="letterModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLetter()">×</span>
+      <h2>My Love Letter 💕</h2>
+      <p>
+        Hallo my babyyyy💗<br><br>
+       happy 5th monthsarry babyy owemjii i try to code something because i really wanna surprise you
+       hehehe i want best for you because you're my babyy. malayo na us pero malayo na pa tayo baby konting tiis lang baby ko hmm
+       baby thank you for loving me and for everything i love you like a lot na i'm always thinking of you and ayoko na nasasad ikaw ganun
+       babyy i know how much you struggle at everything poo that's why i'm always here at your side po i'm your always kakampi kahit 
+       mukha mo kong kaaway heheheh, baby i'm always proud on you and you're the best thing happen to me i love you somuch very much 🌸<br><br>
+        I always love you with all of my heart💖
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
